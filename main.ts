@@ -1,3 +1,6 @@
+/**
+ * --- INITIALIZE SPRITES (USING PRE-EXISTING VARIABLE STUBS) ---
+ */
 // Damage / Collision Handling
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -8,13 +11,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeCountdownBy(0)
 })
-/**
- * --- INITIALIZE SPRITES (USING PRE-EXISTING VARIABLE STUBS) ---
- */
 let sidebone: Sprite = null
-let gaster_lazer: Sprite = null
-let gaster_blaster: Sprite = null
 let bone: Sprite = null
+let gaster_blaster = null
+let gaster_lazer = null
 let chara = sprites.create(img`
     fff22222ffffffffffffffffff22222ffff
     fff22222ffffffffffffffffff22222ffff
@@ -358,46 +358,46 @@ game.onUpdateInterval(400, function () {
     bone.setFlag(SpriteFlag.AutoDestroy, true)
 })
 // game.onUpdateInterval(5000, function () {
-   // gaster_blaster = sprites.create(img`
-       // ffffffffffffffccfffffffffffffff
-       // ffffffffffffff11fffffffffffffff
-       // fffffffffffffd11dffffffffffffff
-       // fffffd1fffff111111fffff1dffffff
-       // ffffbbfffcb11111111bcfffbbfffff
-       // fff1dfffc111111111111cfffd1ffff
-       // ff11ff111111111111111111ff11fff
-       // fd111111111111ff111111111111dff
-       // c1111111111111ff1111111111111cf
-       // b1111111111111ff1111111111111bf
-       // 11111c11111111ff11111111c11111f
-       // 1111fd11111111ff11111111df1111f
-       // c111c11ffd1111ff1111dff11c111cf
-       // fd11c1fffc1111ff1111cfff1c11dff
-       // ff11fdffccf111ff111fccffdf11fff
-       // ff11fdffddf111ff111fddffdf11fff
-       // fff1fd1f11ff11ff11ff11f1df1ffff
-       // fff1df1dbfff11ff11fffbd1fd1ffff
-       // fffbdff111111cffc111111ffdbffff
-       // 1cffdff11111dffffd11111ffdffc1f
-       // fd1f1cf1c111dffffd111c1fc1f1dff
-       // fd11111ffd111cffc111dff11111dff
-       // ff11111fff1111111111fff11111fff
-       // fffd111cffdfddffddfdffc111dffff
-       // ffffc111ffffccffccffff111cfffff
-       // fffffff11cffccffdfff11fffffffff
-       // fffffffffddffffffffddffffffffff
-       // fffffffffc1fdf11fdf1cffffffffff
-       // ffffffffff1fdd11ddf1fffffffffff
-       // fffffffffff11111111ffffffffffff
-       // ffffffffffff111111fffffffffffff
-       // fffffffffffffccccffffffffffffff
-       // `, SpriteKind.Projectile)
-   // gaster_blaster.y = minY - 25
-   // gaster_blaster.x = chara.x
-   // pause(400)
-   // gaster_lazer = sprites.create(assets.image`laser`, SpriteKind.Projectile)
-   // gaster_lazer.x = gaster_blaster.x
-   // gaster_lazer.y = gaster_blaster.x + 20
+// gaster_blaster = sprites.create(img`
+// ffffffffffffffccfffffffffffffff
+// ffffffffffffff11fffffffffffffff
+// fffffffffffffd11dffffffffffffff
+// fffffd1fffff111111fffff1dffffff
+// ffffbbfffcb11111111bcfffbbfffff
+// fff1dfffc111111111111cfffd1ffff
+// ff11ff111111111111111111ff11fff
+// fd111111111111ff111111111111dff
+// c1111111111111ff1111111111111cf
+// b1111111111111ff1111111111111bf
+// 11111c11111111ff11111111c11111f
+// 1111fd11111111ff11111111df1111f
+// c111c11ffd1111ff1111dff11c111cf
+// fd11c1fffc1111ff1111cfff1c11dff
+// ff11fdffccf111ff111fccffdf11fff
+// ff11fdffddf111ff111fddffdf11fff
+// fff1fd1f11ff11ff11ff11f1df1ffff
+// fff1df1dbfff11ff11fffbd1fd1ffff
+// fffbdff111111cffc111111ffdbffff
+// 1cffdff11111dffffd11111ffdffc1f
+// fd1f1cf1c111dffffd111c1fc1f1dff
+// fd11111ffd111cffc111dff11111dff
+// ff11111fff1111111111fff11111fff
+// fffd111cffdfddffddfdffc111dffff
+// ffffc111ffffccffccffff111cfffff
+// fffffff11cffccffdfff11fffffffff
+// fffffffffddffffffffddffffffffff
+// fffffffffc1fdf11fdf1cffffffffff
+// ffffffffff1fdd11ddf1fffffffffff
+// fffffffffff11111111ffffffffffff
+// ffffffffffff111111fffffffffffff
+// fffffffffffffccccffffffffffffff
+// `, SpriteKind.Projectile)
+// gaster_blaster.y = minY - 25
+// gaster_blaster.x = chara.x
+// pause(400)
+// gaster_lazer = sprites.create(assets.image`laser`, SpriteKind.Projectile)
+// gaster_lazer.x = gaster_blaster.x
+// gaster_lazer.y = gaster_blaster.x + 20
 // })
 game.onUpdateInterval(1200, function () {
     sidebone = sprites.create(assets.image`sidebone`, SpriteKind.Projectile)
