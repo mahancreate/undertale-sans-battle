@@ -1,0 +1,17 @@
+{
+    "image1": {
+        "data": "hwQKAAMAAAAQAAAAEAAAABAAAAARAQAAEAAAABAAAAAQAAAAEAAAABAAAAARAQAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "sidebone"
+    },
+    "image2": {
+        "data": "hwQGAB4AAAAREREREREREREREREREREAERERERERERERERERERERABEREREREREREREREREREQAREREREREREREREREREREAERERERERERERERERERERABEREREREREREREREREREQA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "laser"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
