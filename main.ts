@@ -58,6 +58,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherS
     info.changeCountdownBy(0)
 })
 function fight_sans () {
+    music.stopAllSounds()
     chara = sprites.create(assets.image`chara_soul`, SpriteKind.Player)
     sans_battle_idle = sprites.create(assets.image`sans`, SpriteKind.Enemy)
     // Set as Food layer so it sits behind actors nicely
