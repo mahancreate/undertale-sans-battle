@@ -3,7 +3,9 @@
     "version": "0.0.1",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.2.2",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#v0.1.0"
     },
     "files": [
         "main.blocks",
