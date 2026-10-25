@@ -159,6 +159,21 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 `;
+            case "image1":
+            case "sidebone":return img`
+. . . 1 . . . . . 1 
+1 1 1 1 1 1 1 1 1 1 
+. . . 1 . . . . . 1 
+`;
+            case "image7":
+            case "bone":return img`
+. 1 . 
+. 1 . 
+1 1 1 
+. 1 . 
+. 1 . 
+1 1 1 
+`;
             case "image4":
             case "chara_soul":return img`
 ...22222..................22222....
@@ -437,21 +452,6 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 1..........................................................1
 1..........................................................1
 111111111111111111111111111111111111111111111111111111111111
-`;
-            case "image7":
-            case "bone":return img`
-. 1 . 
-. 1 . 
-1 1 1 
-. 1 . 
-. 1 . 
-1 1 1 
-`;
-            case "image1":
-            case "sidebone":return img`
-. . . 1 . . . . . 1 
-1 1 1 1 1 1 1 1 1 1 
-. . . 1 . . . . . 1 
 `;
         }
         return null;
